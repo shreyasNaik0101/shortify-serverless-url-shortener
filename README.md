@@ -17,6 +17,10 @@ https://4mi6u0plhe.execute-api.us-east-1.amazonaws.com/prod/
 
 ## 🏗️ Architecture
 
+<p align="center">
+  <img src="shortify-architecture.png" width="700">
+</p>
+
 ```
 S3 (Static Website Hosting)
         ↓
@@ -92,3 +96,4 @@ shortify/
 3. Lambda generates a short ID.  
 4. URL + ID stored in DynamoDB.  
 5. When short URL is accessed, Lambda fetches original URL and redirects.
+
