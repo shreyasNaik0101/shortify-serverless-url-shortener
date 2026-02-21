@@ -63,10 +63,8 @@ This project is fully serverless — no EC2, no traditional backend servers.
 ```
 shortify/
 │
-├── lambda/
-│   ├── createShortUrl.js
-│   ├── redirectUrl.js
-│   └── package.json
+├── backend/
+│   ├── lambda-code.mjs
 │
 ├── frontend/
 │   ├── index.html
@@ -96,4 +94,5 @@ shortify/
 3. Lambda generates a short ID.  
 4. URL + ID stored in DynamoDB.  
 5. When short URL is accessed, Lambda fetches original URL and redirects.
+
 
